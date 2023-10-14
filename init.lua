@@ -1,0 +1,3 @@
+local currentDirPath = ...
+require(currentDirPath .. '.keymaps')
+require(currentDirPath .. '.prefs')
