@@ -24,6 +24,9 @@ vim.keymap.set("t", "<C-j>", "<cmd>wincmd j<CR>")
 vim.keymap.set("t", "<C-k>", "<cmd>wincmd k<CR>")
 vim.keymap.set("t", "<C-l>", "<cmd>wincmd l<CR>")
 
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("n", "<leader>T", ":terminal<cr>")
+
 
 
 -- All Commands goes hereMap("n", "<C-h>", "<C-w>h")
