@@ -10,6 +10,19 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+    {
+        "HiPhish/nvim-ts-rainbow2",
+        lazy = false,
+        config = function ()
+            require('nvim-treesitter-configs').setup{
+                rainbow = {
+                    enable = true,
+                    query = 'rainbow-parems',
+                    strategy = require('ts-rainbow').strategy.global,
+                }
+            }
+        end,
+    }
 
   -- These are some examples, uncomment them if you want to see them work!
   -- {

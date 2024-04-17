@@ -28,6 +28,14 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+require('nvim-treesitter-configs').setup{
+    rainbow = {
+        enable = true,
+        query = 'rainbow-parems',
+        strategy = require('ts-rainbow').strategy.global,
+    }
+}
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
@@ -37,3 +45,10 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+local otp = vim.opt
+otp.number = true
+otp.relativenumber = true
+otp.shiftwidth = 4
+otp.tabstop = 4
+
