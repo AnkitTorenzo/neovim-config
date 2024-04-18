@@ -17,7 +17,14 @@ end
 
 -- typescript
 lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  on_init = on_init,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+}
+
+lspconfig.eslint_lsp.setup
+{
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
 }

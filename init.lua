@@ -28,13 +28,6 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
-require('nvim-treesitter-configs').setup{
-    rainbow = {
-        enable = true,
-        query = 'rainbow-parems',
-        strategy = require('ts-rainbow').strategy.global,
-    }
-}
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
