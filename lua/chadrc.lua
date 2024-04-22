@@ -14,7 +14,7 @@ M.general = {
 }
 
 M.ui = {
-	theme = "chadracula",
+	theme = "catppuccin",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
