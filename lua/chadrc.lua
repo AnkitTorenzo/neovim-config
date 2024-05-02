@@ -4,15 +4,6 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.general = {
-  n = {
-    ["<C-h>"] = {"<cmd> TmuxNavigatorLeft<CR>", "window left" },
-    ["<C-l>"] = {"<cmd> TmuxNavigatorRight<CR>", "window right" },
-    ["<C-j>"] = {"<cmd> TmuxNavigatorDown<CR>", "window down" },
-    ["<C-k>"] = {"<cmd> TmuxNavigatorUp<CR>", "window up" },
-  }
-}
-
 M.ui = {
 	theme = "catppuccin",
 
@@ -21,6 +12,5 @@ M.ui = {
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
-
 
 return M
