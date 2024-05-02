@@ -29,7 +29,7 @@ local function organizeImports()
 end
 
 -- typescript
-lspconfig.tsserver.setup {
+lspconfig['tsserver'].setup {
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
